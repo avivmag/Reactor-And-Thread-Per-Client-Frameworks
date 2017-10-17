@@ -3,13 +3,17 @@
 This repository is a demonstration of two server-side methodologies - Thread per client and Reactor.
 It also includes an implementation of a specific protocol over it - the text based game protocol (TBGP), an implementation of the bluffer game which uses the framework and lastly, a client which can connect to the server over TBGP and play the available games.
 
+The development of this framework was done in pairs as part of an assignment in "Systems Programming" course at Ben-Gurion University in the begining of 2016.
+
+A detailed description of the framework and the implementation and the Bluffer game can be found in the assignment desciption attached - section 2, 3 and 4 and on the links below.
+
 ## Thread per client vs Reactor
 
-Both methodologies share the same purpose - supply a capability in which multiple clients can connect and interact with one server.
+Both methodologies share the same purpose - supply a capability in which multiple clients can connect to one server and interact with each other.
 There is a lot of difference between Thread-per-client and Reactor methodologies.
-The biggest one lies in the answer to the 'How?' question. How can we achieve such purpose.
-Thread-per-client generates a thread for every client which connects to the server. The thread 'dies' only when the client's connection is terminated.
-On the contrary, When being created the Reactor initiates a fixed size pool of threads, and assign a thread for incoming client data. When the thread finishes the assigned job, he then returns to the pool and waits for a new job's assignment.
+The biggest one lies in the answer to the 'How?' question. How can we achieve our main purpose?
+Thread-per-client generates a thread for every client connecting to the server. The thread 'dies' only when the client's connection is terminated.
+On the contrary, When being created the Reactor initiates a fixed size pool of threads, and assign a thread for jobs which are created by incoming client data. When the thread finishes the assigned job, he then returns to the pool and waits for a new job's assignment.
 
 ## Tokenizer
 
@@ -24,17 +28,7 @@ Threads can be powerful yet unpredictable. When dealing with threads, one must a
 In this assignment we've made sure that side effects from parallelizing threads would never occur, all the while trying to reach the best performance available.
 
 ## Callback
-Another notable mechanism we used is callbacks. We used callbacks to send responds to the client for a message the server received.
-
-
-The development of this framework was done in pairs as part of an assignment in "Systems Programming" course at Ben-Gurion University in the begining of 2016.
-
-A detailed description of the framework and the implementation and the Bluffer game can be found in the assignment desciption attached - section 2, 3 and 4 and on the links below.
-
-
-
-
-
+Another notable mechanism we used is callback. We used callbacks to send responds to the client for a message the server received.
 
 ## Getting Started
 ### Prerequisites
