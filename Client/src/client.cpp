@@ -7,13 +7,13 @@
 #include "../encoder/encoder.h"
 
 /**
-* This code starts two new threads which connect to a remote server and sends some message to it, untill 'quit' keyword is pressed, then it closed the connection and exit the program.
+* This code starts two new threads which connect to a remote server and sends some message to it, until 'quit' keyword is pressed, then it closed the connection and exit the program.
 */
 
 int main (int argc, char *argv[]) {
     // needed server ip and host.
     if (argc < 3) {
-        std::cerr << "Usage: " << argv[0] << " host port" << std::endl << std::endl;
+        std::cerr << "Usage: " << argv[0] << " host port" << std::endl;
         return -1;
     }
     std::string host = argv[1];
