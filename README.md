@@ -60,7 +60,7 @@ From Terminal/cmd type:
 ```
 java -jar path_of_clone/server/reactor.jar <server_port_number> <pool_size>
 ```
-<server_port_number> - number of port the server needs to wait for incomming connections.
+<server_port_number> - number of port the server needs to wait for incomming connections.</br>
 <pool_size> - reactor's thread pool size.
 
 ##### Thread per client
@@ -74,16 +74,16 @@ java -jar path_of_clone/server/thread_per_client.jar <server_port_number>
 
 1. open terminal and navigate to the program directory
 2. type `./Client/bin/client <server_ip_address> <server_port>` and press enter.
-3. enjoy :D.
+3. enjoy :D.</br>
 Note: always run the client after server is ready to serve.
 
 ## Built With
 
-Server
+### Server
 * [Maven](https://maven.apache.org/) - Software project management which manage project's build.
 * [Gson](https://github.com/google/gson) - A Java serialization/deserialization library to convert Java Objects into JSON and back.
 
-Client
+### Client
 * [GNU make](https://www.gnu.org/software/make/) - A framework used for simple code compilation.
 * [gcc](https://gcc.gnu.org/) - The compiler itself.
 * [boost library](http://www.boost.org/) - Used known already implemented data structures.
