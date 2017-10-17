@@ -125,7 +125,7 @@ class MultipleClientProtocolServer<T> implements Runnable {
 		}
 
 		Map<String, GameFactory> map = new HashMap<String, GameFactory>();
-		map.put("BLUFFER", ()-> { return new Bluffer("./json");});
+		map.put("BLUFFER", ()-> { return new Bluffer("./bluffer_questions.json");});
 		TextBasedGameServer.getInstance().initialize(map);
 
 		// Get port

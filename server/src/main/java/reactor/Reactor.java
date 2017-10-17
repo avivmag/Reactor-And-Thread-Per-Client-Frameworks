@@ -209,7 +209,7 @@ public class Reactor<T> implements Runnable {
             System.exit(1);
         }
         Map<String, GameFactory> map = new HashMap<String, GameFactory>();
-        map.put("BLUFFER", ()-> { return new Bluffer("./json");});
+        map.put("BLUFFER", ()-> { return new Bluffer("./bluffer_questions.json");});
         TextBasedGameServer.getInstance().initialize(map);
         try {
             int port = Integer.parseInt(args[0]);
