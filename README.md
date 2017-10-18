@@ -74,8 +74,9 @@ java -jar path_of_clone/server/thread_per_client.jar <server_port_number>
 #### Running the client
 
 1. open terminal and navigate to the program directory
-2. type `./Client/bin/client <server_ip_address> <server_port>` and press enter.
-3. enjoy :D.</br>
+2. Do this step only if simulation rebuilt is needed: type `make` and press enter.
+3. type `./Client/bin/client <server_ip_address> <server_port>` and press enter.
+4. enjoy :D.</br>
 Note: always run the client after server is ready to serve.
 
 ## Built With
