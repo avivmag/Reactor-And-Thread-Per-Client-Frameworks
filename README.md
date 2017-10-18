@@ -40,6 +40,7 @@ For the server side:
 For the Client side:
 1. Kubuntu - this program was tested only on kubuntu, but it probably can be ran on any other known gcc compatible operating systems.
 	https://kubuntu.org/getkubuntu/
+(The following are for those who which to compile the files themselves)
 2. GNU make
 	https://www.gnu.org/software/make/
 3. g++ compiler
