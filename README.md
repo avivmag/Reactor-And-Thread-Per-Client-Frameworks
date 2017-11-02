@@ -3,7 +3,7 @@
 This repository is a demonstration of two server-side methodologies - Thread per client and Reactor.
 It also includes an implementation of a specific protocol over it - the text based game protocol (TBGP), an implementation of the bluffer game which uses the framework and lastly, a client which can connect to the server over TBGP and play the available games.
 
-The development of this framework was done in pairs as part of an assignment in "Systems Programming" course at Ben-Gurion University in the beginning of 2016.
+The development of this framework was done in pairs as part of an assignment in "Systems Programming" course, by the guidance of the amazing course instructors, at Ben-Gurion University in the fall of 2016.
 
 A detailed description of the framework and the implementation and the Bluffer game can be found in the assignment desciption attached - section 2, 3 and 4 and on the links below.
 
